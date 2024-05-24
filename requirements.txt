@@ -1,6 +1,10 @@
+conda-forge
 pyspark 
 polars 
 matplotlib 
 scikit-learn
 flake8 
 black
+kaggle
+notebook
+seaborn

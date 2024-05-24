@@ -14,6 +14,18 @@ conda create --name data_analysis_spark
 conda activate data_analysis_spark
 ```
 
+#### Install PySpark
+
+```shell
+conda install -c conda-forge pyspark
+```
+
+#### Install Jupyter Notebook
+
+```shell
+conda install -c conda-forge notebook
+```
+
 ### Install necessary packages
 
 ```shell
@@ -35,5 +47,15 @@ pip install -r requirements.txt
     gcloud init
     ```
 
-- Follow the on-screen instructions to authenticate your Google account and set up your default configuration, including the project and compute zone.
+- Follow the on-screen instructions to authenticate your Google account and set up the default configuration, including the project and compute zone.
+
+## Google Cloud Dataproc
+
+We need to setting up Google Cloud Dataproc (a managed Spark and Hadoop service) to executing Spark jobs on it.
+
+We can do it using its Web UI or `gcloud` CLI
+
+## The dataset
+
+The dataset can be found through this link: https://www.kaggle.com/c/nyc-taxi-trip-duration/data
 

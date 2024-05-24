@@ -1,0 +1,5 @@
+{
+    "GCP_REGION": "europe-west9",
+    "ZONE": "europe-west9-a",
+    "BUCKET_NAME": "spbd-nyc-taxi-bucket"
+}
