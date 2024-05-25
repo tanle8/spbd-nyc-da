@@ -8,3 +8,5 @@ black
 kaggle
 notebook
 seaborn
+google-cloud-dataproc 
+google-cloud-storage

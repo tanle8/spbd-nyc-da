@@ -1,5 +1,16 @@
 {
-    "GCP_REGION": "europe-west9",
-    "ZONE": "europe-west9-a",
-    "BUCKET_NAME": "spbd-nyc-taxi-bucket"
+    "project_id": "your-project-id",
+    "region": "europe-west9",
+    "cluster_name": "spbd-nyc-taxi-cluster",
+    "machine_type": "n2-standard-2",
+    "num_workers": 2,
+    "image_version": "2.0-debian10",
+    "bucket_name": "spbd-nyc-taxi-bucket",
+    "scripts": [
+        "trip_analysis.py",
+        "fare_analysis.py",
+        "tip_analysis.py",
+        "traffic_analysis.py",
+        "demand_prediction.py"
+    ]
 }
