@@ -11,7 +11,7 @@ def main():
     spark = SparkSession.builder.appName("Demand Prediction").getOrCreate()
     
     # Load data from GCS
-    df = spark.read.parquet(f"gs://{BUCKET_NAME}/data/train_processed.parquet")
+    df = spark.read.parquet(f"gs://{BUCKET_NAME}/data/processed/train_processed.parquet")
     
     # Feature engineering
     df = df.withColumn("year", year("pickup_datetime"))

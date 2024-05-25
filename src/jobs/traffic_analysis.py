@@ -23,7 +23,7 @@ def main():
     spark = SparkSession.builder.appName("Traffic Analysis").getOrCreate()
     
     # Adjust the path if running on GCP
-    TRAIN_PROCESSED = f"gs://{BUCKET_NAME}/data/train_processed.parquet"
+    TRAIN_PROCESSED = f"gs://{BUCKET_NAME}/data/processed/train_processed.parquet"
     df = spark.read.parquet(TRAIN_PROCESSED)
 
     df = df.withColumn("duration_hours", col("trip_duration") / 3600)
