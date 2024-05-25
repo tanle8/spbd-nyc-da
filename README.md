@@ -59,3 +59,19 @@ We can do it using its Web UI or `gcloud` CLI
 
 The dataset can be found through this link: https://www.kaggle.com/c/nyc-taxi-trip-duration/data
 
+https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+
+
+## Run all the jobs
+
+Give the script the permission to run
+
+```sh
+chmod +x run_workflow.sh
+```
+
+then run it:
+
+```sh
+./run_workflow.sh
+```
